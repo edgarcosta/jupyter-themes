@@ -172,9 +172,7 @@ jt -t onedork -fs 95 -altp -tfs 11 -nfs 115 -cellw 88% -T
 # light
 jt -t grade3 -fs 95 -altp -tfs 11 -nfs 115 -cellw 88% -T
 
-# the forker's styles:
-# light
-jt -t solarizedl --toolbar -cellw 940 -lineh 130 -nfs 11
+sage -sh -c "jt  -N -cellw 90%  -f firacode -fs 11 -ofs 11 -cursc r -tfs 11 -t gruvboxd"
 ```
 
 
