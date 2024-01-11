@@ -6,25 +6,25 @@
 | Kyle Dunovan | ![image](https://img.shields.io/pypi/v/jupyterthemes.svg) | ![image](https://travis-ci.org/dunovank/jupyter-themes.svg?branch=master) | [![Binder](http://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/dunovank/jupyter-themes/master?filepath=index.ipynb) |
 
 
+## Updates
 
 ---
-#### *JupyterLab Update*:
 
-Okay, so I finally got around to publishing a light theme for JupyterLab that borrows various style conventions from the `jupyter-themes` package. You can see a preview of the style here: [**JupyterLab Legos UI & Syntax theme**](https://github.com/dunovank/jupyterlab_legos_ui). 
+### *Scaling Back Support*:
 
-* The theme can be installed with pip (***NOTE:*** After installing and launching `jupyter lab`, the theme still needs to be enabled: *Settings > JupyterLab Theme > @dunovank/jupyterlab_legos_ui*)
+As anyone who has opened a bug report or feature request in the last several years can attest, I have begun scaling back support for the `jupyter-themes` package - mostly due to my personal preference for using Jupyter Lab over Jupyter Notebook classic (see update below for two of my JupyterLab theme repos). ***Thank you*** to everyone who contributed to `jupyter-themes`.  
 
-```bash 
-pip install jupyterlab_legos_ui
-```
+### *JupyterLab Themes*:
 
+JupyterLab themes with similar style/design conventions to `jupyter-themes`:
 
-* If you decide you're not a fan you can uninstall with the following commands.
+##### JupyterLab v3.0
+* [**Legos Theme**](https://github.com/dunovank/jupyterlab_legos_ui).
+* [**Darkside Theme**](https://github.com/dunovank/jupyterlab_darkside_ui).
 
-```bash
-pip uninstall jupyterlab_legos_ui
-jupyter labextension uninstall @dunovank/jupyterlab_legos_ui
-```
+##### JupyterLab v4.0
+* [**Darkside Theme**](https://github.com/dunovank/jupyterlab_darkside_theme).
+
 ---
 
 #### JT Customizable Features
@@ -47,7 +47,7 @@ jupyter labextension uninstall @dunovank/jupyterlab_legos_ui
 * [jupyterthemes on GitHub](https://github.com/dunovank/jupyter-themes)
 
 ### Requirements
-* Python 3.4, 3.5, 3.6, 3.7
+* Python 3.4, 3.5, 3.6, 3.7 and 3.8
 * Jupyter ([Anaconda](https://www.continuum.io/downloads) recommended)
 * matplotlib
 
@@ -60,19 +60,20 @@ pip install jupyterthemes
 pip install --upgrade jupyterthemes
 ```
 
+### Install with conda
+```sh
+# install jupyterthemes
+conda install -c conda-forge jupyterthemes
+
+# update to latest version
+conda update jupyterthemes
+```
+
 ### Known issues
 - **for best results:** use notebook>=5.6.0 (`pip install --upgrade notebook`)
 - **refreshing / removing / resetting:** depending on your system, browser, etc., you may need to empty your browser cache after installing a new theme (`-t`) or attempting to restore the default (`-r`) in order for those changes to take effect. (see discussion [here](https://github.com/dunovank/jupyter-themes/issues/86)). At the very least you'll need to refresh your browser window (usually `cmd+r` or `ctrl+r`).
 - **install issue:** if you get an error saying `jt` is not recognized, try [this](https://github.com/dunovank/jupyter-themes/issues/92#issuecomment-300688587) fix.
 - **slow render when scrolling:** fix available [here](https://github.com/dunovank/jupyter-themes/issues/117#issuecomment-296391443)
-
-
-#### Help support me
-
-I firmly believe that software is best served open and, as such, am committed to providing free and easy access to all my code. So if you can't make a financial contribution then `pip install` it anyway! But if you're sitting on some extra cash and enjoy using a package I've developed, then any amount helps and is greatly appreciated.
-
-Click here to make a quick donation --> [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=FVXYJTEBMDE7W)
-
 
 
 ### Command Line Usage
@@ -244,6 +245,7 @@ jtplot.reset()
 | saxmono     | saxMono                  |
 | source      | Source Code Pro          |
 | sourcemed   | Source Code Pro Medium   |
+| sudovar     | Sudo Variable            |
 | ptmono      | PT Mono                  |
 | ubuntu      | Ubuntu Mono              |
 
